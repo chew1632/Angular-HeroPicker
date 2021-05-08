@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { PickHeroComponent } from './pick-hero/pick-hero.component';
 import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PickHeroComponent
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
   ],
   providers: [],
