@@ -5,13 +5,5 @@
   </li>
 </ul>
 
-<!-- selectedHero been null at the first time so we need to added *ngIf -->
-<!-- if selectedHero true then show up -->
-<div *ngIf="selectedHero">
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedHero.id}}</div>
-  <div>
-    <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
-  </div>
-</div>
+<!-- 如果全部功能都在同一個頁面很難維護，如果這樣拆分會比較好(取名也很重要，才知道這個file是在做什麼事情) -->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
